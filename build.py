@@ -111,9 +111,12 @@ ICONS = {
 
 def row_html(r, leg):
     title = esc(r["title"])
-    if r.get("recheck"):
+    badge = RECHECK if r.get("recheck") else (
+        ('<span style="font-size: 12px; font-weight: 900; line-height: 1.3; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 999px; '
+         f'background: #FFE3EB; color: #A3214A">{esc(r["badge"])}</span>') if r.get("badge") else "")
+    if badge:
         title_html = ('<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px">\n'
-                      f'<span style="font-size: 17px; font-weight: 700; line-height: 1.35">{title}</span>\n{RECHECK}\n</div>')
+                      f'<span style="font-size: 17px; font-weight: 700; line-height: 1.35">{title}</span>\n{badge}\n</div>')
     else:
         title_html = f'<div style="font-size: 17px; font-weight: 700; line-height: 1.35">{title}</div>'
     sub = (f'\n<div style="font-size: 14px; font-weight: 500; line-height: 1.45; color: #6E5A6E">{esc(r["sub"])}</div>'
@@ -279,7 +282,7 @@ def build(feed_text):
 
     for m in X.get("manual", []):
         d = date.fromisoformat(m["date"])
-        add(d, {"sort": m.get("sort", "00:00"), "time": m["time"], "title": m["title"], "sub": m.get("sub", "")})
+        add(d, {"sort": m.get("sort", "00:00"), "time": m["time"], "title": m["title"], "sub": m.get("sub", ""), "badge": m.get("badge", "")})
 
     # Days, grouped into legs
     days_by_leg = {lg["id"]: [] for lg in legs}
