@@ -1,4 +1,4 @@
-# Two Weeks in Japan
+# Japan Oaks Tour 2026
 
 The kawaii trip itinerary, rebuilt every hour from TripIt.
 
