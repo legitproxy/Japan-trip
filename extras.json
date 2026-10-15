@@ -372,22 +372,15 @@
       "date": "2026-10-15",
       "time": "Dinner",
       "sort": "19:00",
-      "title": "CoCo Ichibanya, Namba Ebisubashi",
-      "sub": "Japanese curry, pick your spice level (2 is already spicy!)"
+      "title": "Dinner in Namba"
     },
     {
       "date": "2026-10-15",
       "time": "Night",
       "sort": "20:00",
       "title": "Dotonbori neon walk",
-      "sub": "Glico running man, the giant crab and the canal lights"
-    },
-    {
-      "date": "2026-10-15",
-      "time": "Late",
-      "sort": "21:00",
-      "title": "Okonomiyaki snack at CHIBO Dotonbori",
-      "sub": "Osaka's famous savory pancake, finished on the griddle"
+      "sub": "The Glico running man and all the lights along the canal",
+      "badge": "SAW IT!"
     },
     {
       "date": "2026-10-20",
