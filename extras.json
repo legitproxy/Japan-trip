@@ -25,7 +25,19 @@
         "Nakano",
         "Toyosu",
         "Ginza",
-        "Ueno"
+        "Ueno",
+        "港区",
+        "新宿",
+        "渋谷",
+        "中央区",
+        "台東",
+        "江東",
+        "虎ノ門",
+        "麻布",
+        "中野",
+        "豊洲",
+        "銀座",
+        "上野"
       ],
       "pastel": "#FFE3EB",
       "mid": "#F28AA8",
@@ -41,7 +53,8 @@
         "山梨",
         "Fujikawaguchiko",
         "Kawaguchiko",
-        "河口湖"
+        "河口湖",
+        "富士河口湖"
       ],
       "pastel": "#DDF3F4",
       "mid": "#6CC4CC",
@@ -57,7 +70,9 @@
         "大阪",
         "Ikuno",
         "Tsuruhashi",
-        "Konohana"
+        "Konohana",
+        "生野",
+        "此花"
       ],
       "pastel": "#FFEBD9",
       "mid": "#F5A766",
@@ -76,7 +91,11 @@
         "Ukyō",
         "Sagatenryuji",
         "Shimogyo",
-        "Shimogyō"
+        "Shimogyō",
+        "東山区",
+        "右京",
+        "下京",
+        "嵯峨"
       ],
       "pastel": "#E6F4DC",
       "mid": "#8CC970",
@@ -103,7 +122,19 @@
         "Nakano",
         "Toyosu",
         "Ginza",
-        "Ueno"
+        "Ueno",
+        "港区",
+        "新宿",
+        "渋谷",
+        "中央区",
+        "台東",
+        "江東",
+        "虎ノ門",
+        "麻布",
+        "中野",
+        "豊洲",
+        "銀座",
+        "上野"
       ],
       "pastel": "#EEE6FB",
       "mid": "#A88BE0",
