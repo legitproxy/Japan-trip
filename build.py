@@ -252,7 +252,8 @@ def build(feed_text):
         low = s.lower()
         if low.startswith(("check-in", "check-out")):
             travel.add(d)
-        conf = next((c for c in X["events"] if (low == c["match"] if c.get("exact") else c["match"] in low)), {})
+        conf = next((c for c in X["events"] if (low == c["match"] if c.get("exact") else c["match"] in low)
+                     and c.get("if_location", "").lower() in e["LOCATION"].lower()), {})
         if conf.get("hide"):
             continue
         rng = f"{hm_short(st)}–{hm_short(en)}".replace(" PM–", "–").replace(" AM–", "–") if en > st else hm(st)
@@ -266,8 +267,6 @@ def build(feed_text):
         # Flag plans whose address is in a different city from where you're staying that night.
         lg = leg_for(d)
         loc = e["LOCATION"].replace("東京都", "東京")  # 東京都 (Tokyo-to) contains 京都 (Kyoto)
-        if os.environ.get("TRIP_DEBUG") and "borderless" in low:
-            print("::notice::loc " + loc)
         moving = low.startswith(("check-in", "check-out")) or "shinkansen" in low or "train" in low
         if lg and loc and not moving and not any(c.lower() in loc.lower() for c in lg["cities"]):
             other = next((L["cities"][0] for L in legs for c in L["cities"] if c.lower() in loc.lower()), None)

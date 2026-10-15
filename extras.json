@@ -286,6 +286,12 @@
       "sub": "Barefoot in water: wear pants that roll up"
     },
     {
+      "match": "teamlab",
+      "if_location": "Kyoto",
+      "title": "teamLab Biovortex Kyoto",
+      "sub": "Near Kyoto Station · until {end}"
+    },
+    {
       "match": "teamlab biovortex",
       "title": "teamLab Biovortex Kyoto",
       "sub": "Near Kyoto Station · until {end}"

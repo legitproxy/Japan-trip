@@ -36,7 +36,7 @@ jobs:
           grep -q "BEGIN:VCALENDAR" feed.ics
       - name: Build page
         run: |
-          TRIP_DEBUG=1 python build.py feed.ics site/index.html
+          python build.py feed.ics site/index.html
           cp -r assets site/ 2>/dev/null || true
           rm feed.ics
       - uses: actions/configure-pages@v5
