@@ -278,7 +278,9 @@
     {
       "match": "universal studios",
       "title": "Universal Studios Japan",
-      "sub": "Until {end}; Halloween zombies from 6 PM"
+      "sub": "After lunch, staying until the Halloween zombies come out after dark",
+      "time": "Afternoon",
+      "sort": "14:00"
     },
     {
       "match": "teamlab planets",
