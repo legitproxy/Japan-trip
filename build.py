@@ -267,10 +267,8 @@ def build(feed_text):
         lg = leg_for(d)
         loc = e["LOCATION"]
         moving = low.startswith(("check-in", "check-out")) or "shinkansen" in low or "train" in low
-        if os.environ.get("TRIP_DEBUG") and "teamlab" in low:
-            print(f"::notice::debug {d} {s[:30]} leg={lg and lg['id']} loclen={len(loc)} tokyo={'tokyo' in loc.lower()} moving={moving}")
         if lg and loc and not moving and not any(c.lower() in loc.lower() for c in lg["cities"]):
-            other = next((c for L in legs for c in L["cities"] if c.lower() in loc.lower()), None)
+            other = next((L["cities"][0] for L in legs for c in L["cities"] if c.lower() in loc.lower()), None)
             if other:
                 r["recheck"] = True
                 r["sub"] = f"Listed in {other}, but you're staying in {lg['cities'][0]} that night"
