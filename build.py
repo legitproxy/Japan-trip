@@ -4,7 +4,7 @@ Usage: python build.py feed.ics site/index.html
 Hand-written touches (nicer names, little descriptions, extra rows) live in extras.json.
 Only names and times are published: addresses, phone numbers and notes from TripIt are never shown.
 """
-import html, json, re, sys
+import html, json, os, re, sys
 from datetime import datetime, date, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -181,7 +181,8 @@ def flight_info(e):
     dep = local(e["DTSTART"], ftz)
     arr = local(e["DTEND"], ttz)
     # TripIt's end time can be a few minutes off; prefer an arrival time written in the description.
-    am = re.search(r"arr(?:ive|ives|ival)?[^0-9]{0,40}?(\d{1,2}):(\d{2})\s*([ap])\.?m", e["DESCRIPTION"], re.I)
+    am = (re.search(r"(\d{1,2}):(\d{2})\s*([ap])\.?\s*m\.?\s*[A-Z]{0,5}\s*\n\s*Arriv", e["DESCRIPTION"], re.I)
+          or re.search(r"arr(?:ive|ives|ival)?[^0-9]{0,40}?(\d{1,2}):(\d{2})\s*([ap])\.?m", e["DESCRIPTION"], re.I))
     if am:
         h, mi, ap_ = int(am.group(1)), int(am.group(2)), am.group(3).lower()
         h = h % 12 + (12 if ap_ == "p" else 0)
@@ -266,6 +267,8 @@ def build(feed_text):
         lg = leg_for(d)
         loc = e["LOCATION"]
         moving = low.startswith(("check-in", "check-out")) or "shinkansen" in low or "train" in low
+        if os.environ.get("TRIP_DEBUG") and "teamlab" in low:
+            print(f"::notice::debug {d} {s[:30]} leg={lg and lg['id']} loclen={len(loc)} tokyo={'tokyo' in loc.lower()} moving={moving}")
         if lg and loc and not moving and not any(c.lower() in loc.lower() for c in lg["cities"]):
             other = next((c for L in legs for c in L["cities"] if c.lower() in loc.lower()), None)
             if other:
