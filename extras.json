@@ -1,0 +1,72 @@
+{
+  "trip_tz": "Asia/Tokyo",
+  "skip": ["Japan"],
+  "legs": [
+    {"id": "tokyo-1", "checkin": "Check-in: Tokyo", "checkout": "Check-out: Tokyo", "stay": "Nakaochiai, Shinjuku", "cities": ["Tokyo"],
+     "pastel": "#FFE3EB", "mid": "#F28AA8", "text": "#A3214A"},
+    {"id": "kawaguchiko", "checkin": "Check-in: Ubuya", "checkout": "Check-out: Ubuya", "stay": "Kozantei Ubuya", "cities": ["Yamanashi", "Fujikawaguchiko", "Kawaguchiko"],
+     "pastel": "#DDF3F4", "mid": "#6CC4CC", "text": "#1A6870"},
+    {"id": "osaka", "checkin": "Check-in: Osaka", "checkout": "Check-out: Osaka", "stay": "Tsuruhashi", "cities": ["Osaka"],
+     "pastel": "#FFEBD9", "mid": "#F5A766", "text": "#9A4300"},
+    {"id": "kyoto", "checkin": "Check-in: Kyoto Machiya", "checkout": "Check-out: Kyoto Machiya", "stay": "Machiya townhouse", "cities": ["Kyoto"],
+     "pastel": "#E6F4DC", "mid": "#8CC970", "text": "#2F6B1F"},
+    {"id": "tokyo-2", "checkin": "Check-in: Tokyo 2", "checkout": "Check-out: Tokyo 2", "stay": "Yotsuya, Shinjuku", "cities": ["Tokyo"],
+     "pastel": "#EEE6FB", "mid": "#A88BE0", "text": "#5B3A99"}
+  ],
+  "airports": {
+    "HND": {"name": "Haneda", "tz": "Asia/Tokyo"},
+    "NRT": {"name": "Narita", "tz": "Asia/Tokyo"},
+    "IAH": {"name": "Houston", "tz": "America/Chicago"},
+    "SAT": {"name": "San Antonio", "tz": "America/Chicago"}
+  },
+  "flights": {
+    "UA7937": {"name": "ANA NH113", "card": "out", "arrive_note": ", Terminal 3", "row": "Land at Haneda, Terminal 3"},
+    "DL1006": {"name": "Delta DL1006", "card": "out-crew", "crew": "San Antonio crew", "row": "San Antonio crew lands, Delta DL1006"},
+    "UA7936": {"name": "ANA NH114", "card": "home", "row": "Fly home, ANA NH114"},
+    "DL294":  {"name": "Delta DL294", "card": "home-crew", "crew": "San Antonio crew", "row": "San Antonio crew flies home, Delta DL294"}
+  },
+  "events": [
+    {"match": "check-in: tokyo 2", "exact": true, "title": "Check in, Yotsuya", "sub": "Central Tokyo, near Shinjuku Gyoen"},
+    {"match": "check-out: tokyo 2", "exact": true, "hide": true},
+    {"match": "check-in: tokyo", "exact": true, "time": "Evening", "title": "Check in", "sub": "Nakaochiai, Shinjuku"},
+    {"match": "check-out: tokyo", "exact": true, "title": "Check out, private car to Fuji"},
+    {"match": "check-in: ubuya", "title": "Check in, Kozantei Ubuya", "sub": "Kaiseki dinner, onsen, Fuji views"},
+    {"match": "check-out: ubuya", "title": "Check out, Kozantei Ubuya"},
+    {"match": "check-in: osaka", "time": "Evening", "title": "Check in, Tsuruhashi", "sub": "Japan's largest Koreatown"},
+    {"match": "check-out: osaka", "title": "Check out, on to Kyoto"},
+    {"match": "check-in: kyoto", "title": "Check in, Kyoto machiya", "sub": "Traditional wooden townhouse"},
+    {"match": "check-out: kyoto", "title": "Check out, back to Tokyo"},
+    {"match": "maguro mart", "title": "Maguro Mart", "sub": "All-bluefin tuna izakaya in Nakano"},
+    {"match": "happy pancake", "title": "A Happy Pancake, Shibuya", "sub": "Fluffy soufflé pancakes"},
+    {"match": "eyeglass", "title": "Jacque's eyeglass appointment", "sub": "Jacques Marie Mage, Omotesandō · {range}"},
+    {"match": "age.3", "title": "Age.3 GINZA"},
+    {"match": "manten sushi", "title": "Manten Sushi Nihonbashi", "sub": "Edomae omakase, about 25 courses"},
+    {"match": "jins pickup", "title": "JINS pickup", "sub": "Shinjuku flagship store"},
+    {"match": "jins", "title": "JINS Ginza", "sub": "{range}"},
+    {"match": "shinkansen", "title": "Bullet train, Mishima → Shin-Osaka", "sub": "First Shinkansen ride for most of the crew · arrives {end}"},
+    {"match": "universal studios", "title": "Universal Studios Japan", "sub": "Until {end}; Halloween zombies from 6 PM"},
+    {"match": "teamlab planets", "title": "teamLab Planets, Toyosu", "sub": "Barefoot in water: wear pants that roll up"},
+    {"match": "teamlab biovortex", "title": "teamLab Biovortex Kyoto", "sub": "Near Kyoto Station · until {end}"},
+    {"match": "teamlab borderless", "title": "teamLab Borderless", "sub": "Azabudai Hills · until {end}"},
+    {"match": "hikiniku", "title": "Hikiniku to Come, Higashiyama", "sub": "Charcoal-grilled hamburg steak lunch"},
+    {"match": "tsukitouro", "title": "Arashiyama Tsukitouro", "sub": "Bamboo grove light-up until {end}"},
+    {"match": "zen night", "title": "Zen Night Tokyo", "sub": "Tokyo National Museum, Ueno · until {end}"},
+    {"match": "yakiniku kappo note", "title": "Yakiniku Kappo Note", "sub": "A5 wagyu omakase, Azabu-juban"},
+    {"match": "ginza happo", "title": "Ginza Happo, Shinjuku", "sub": "Dinner"}
+  ],
+  "manual": [
+    {"date": "2026-10-12", "time": "All day", "title": "Sports Day holiday"},
+    {"date": "2026-10-13", "time": "All day", "title": "Shopping spree in Tokyo"},
+    {"date": "2026-10-14", "time": "Midday", "sort": "12:00", "title": "Yoshida udon lunch", "sub": "Fujiyoshida's famously chewy noodles"},
+    {"date": "2026-10-14", "time": "Afternoon", "sort": "13:30", "title": "Oishi Park", "sub": "Kochia turning crimson by the lake"},
+    {"date": "2026-10-20", "time": "All day", "title": "Shopping spree in Tokyo"},
+    {"date": "2026-10-20", "time": "Today", "sort": "00:01", "title": "Harry joins the crew!"},
+    {"date": "2026-10-22", "time": "All day", "title": "Shopping spree in Tokyo"},
+    {"date": "2026-10-23", "time": "All day", "title": "Shopping spree in Tokyo"},
+    {"date": "2026-10-24", "time": "7:30 AM", "sort": "07:30", "title": "Leave for Haneda", "sub": "ANA check-in closes 9:25 AM"}
+  ],
+  "notes": [
+    {"icon": "bag", "html": "<strong>Train days:</strong> Suitcases over 160 cm total (length + width + height) need a Shinkansen seat with an oversized-baggage area."},
+    {"icon": "clock", "html": "<strong>Oct 24:</strong> Leave Yotsuya by about 7:30 AM. ANA check-in closes at 9:25 AM for the 10:25 flight."}
+  ]
+}

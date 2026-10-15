@@ -1,0 +1,47 @@
+name: Update trip page from TripIt
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # every hour
+  workflow_dispatch:        # "Run workflow" button for an instant refresh
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Download TripIt feed
+        env:
+          TRIPIT_FEED_URL: ${{ secrets.TRIPIT_FEED_URL }}
+        run: |
+          test -n "$TRIPIT_FEED_URL" || { echo "Add the TRIPIT_FEED_URL secret first"; exit 1; }
+          curl -fsSL --retry 3 "$TRIPIT_FEED_URL" -o feed.ics
+          grep -q "BEGIN:VCALENDAR" feed.ics
+      - name: Build page
+        run: |
+          python build.py feed.ics site/index.html
+          cp -r assets site/ 2>/dev/null || true
+          rm feed.ics
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

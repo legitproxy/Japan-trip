@@ -1,0 +1,4 @@
+feed.ics
+*.ics
+site/
+__pycache__/
