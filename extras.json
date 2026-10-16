@@ -263,12 +263,14 @@
     {
       "match": "jins pickup",
       "title": "JINS pickup",
-      "sub": "Shinjuku flagship store"
+      "sub": "Shinjuku flagship store · {start}",
+      "under": "shopping spree"
     },
     {
       "match": "jins",
       "title": "JINS Ginza",
-      "sub": "{range}"
+      "sub": "Ginza · {range}",
+      "under": "shopping spree"
     },
     {
       "match": "shinkansen",
@@ -369,21 +371,28 @@
       "sort": "13:50",
       "title": "Giant Jorō spiders everywhere!",
       "sub": "Yellow-and-black striped orb weavers (女郎蜘蛛) all over the Fuji area",
-      "badge": "SPOTTED!"
-    },
-    {
-      "date": "2026-10-15",
-      "time": "Dinner",
-      "sort": "19:00",
-      "title": "Dinner in Namba"
+      "badge": "SPOTTED!",
+      "under": "oishi park"
     },
     {
       "date": "2026-10-15",
       "time": "Night",
-      "sort": "20:00",
+      "sort": "19:00",
+      "title": "Night out in Namba"
+    },
+    {
+      "date": "2026-10-15",
+      "sort": "19:01",
+      "title": "Dinner",
+      "under": "night out in namba"
+    },
+    {
+      "date": "2026-10-15",
+      "sort": "19:30",
       "title": "Dotonbori neon walk",
       "sub": "The Glico running man and all the lights along the canal",
-      "badge": "SAW IT!"
+      "badge": "SAW IT!",
+      "under": "night out in namba"
     },
     {
       "date": "2026-10-16",

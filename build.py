@@ -275,11 +275,12 @@ def build(feed_text):
         rng = f"{hm_short(st)}–{hm_short(en)}".replace(" PM–", "–").replace(" AM–", "–") if en > st else hm(st)
         if st.strftime("%p") != en.strftime("%p"):
             rng = f"{hm_short(st)}–{hm_short(en)}"
-        fill = lambda t: t.replace("{end}", hm(en)).replace("{range}", rng)
+        fill = lambda t: t.replace("{end}", hm(en)).replace("{range}", rng).replace("{start}", hm(st))
         label = conf.get("time", hm(st))
         sort = conf.get("sort") or {"Morning": "08:00", "Midday": "12:00", "Afternoon": "14:00", "Evening": "18:00"}.get(label, st.strftime("%H:%M"))
         r = {"sort": sort, "time": label, "title": conf.get("title", s),
-             "sub": fill(conf.get("sub", f"Until {hm(en)}" if (en - st) >= timedelta(minutes=90) else ""))}
+             "sub": fill(conf.get("sub", f"Until {hm(en)}" if (en - st) >= timedelta(minutes=90) else "")),
+             "badge": conf.get("badge", ""), "under": conf.get("under", "").lower()}
         # Flag plans whose address is in a different city from where you're staying that night.
         lg = leg_for(d)
         loc = e["LOCATION"].replace("東京都", "東京")  # 東京都 (Tokyo-to) contains 京都 (Kyoto)
