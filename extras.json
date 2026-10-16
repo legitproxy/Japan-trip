@@ -394,6 +394,14 @@
     },
     {
       "date": "2026-10-16",
+      "time": "Midday",
+      "sort": "11:30",
+      "title": "Osaka Castle",
+      "sub": "Walked and rode the trolley around the castle grounds",
+      "badge": "DID IT!"
+    },
+    {
+      "date": "2026-10-16",
       "time": "Afternoon",
       "sort": "16:30",
       "title": "Despicable Me: Minion Mayhem",
