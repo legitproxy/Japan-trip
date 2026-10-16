@@ -278,7 +278,7 @@
     {
       "match": "universal studios",
       "title": "Universal Studios Japan",
-      "sub": "After lunch, staying until the Halloween zombies come out after dark",
+      "sub": "Afternoon into Halloween night",
       "time": "Afternoon",
       "sort": "14:00"
     },
@@ -359,8 +359,9 @@
       "time": "Afternoon",
       "sort": "13:45",
       "title": "Found a hawk moth!",
-      "sub": "A pellucid hawk moth at Oishi Park. It hovers like a tiny hummingbird",
-      "badge": "SPOTTED!"
+      "sub": "A pellucid hawk moth. It hovers like a tiny hummingbird",
+      "badge": "SPOTTED!",
+      "under": "oishi park"
     },
     {
       "date": "2026-10-14",
@@ -386,7 +387,7 @@
     },
     {
       "date": "2026-10-16",
-      "time": "Today",
+      "time": "Morning",
       "sort": "07:00",
       "title": "Minoh Falls hike",
       "sub": "Hiked down from the falls to Minoh Station through the greenery",
@@ -406,7 +407,8 @@
       "sort": "16:30",
       "title": "Despicable Me: Minion Mayhem",
       "sub": "First ride of the day, with the Express Pass",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
@@ -414,7 +416,8 @@
       "sort": "17:00",
       "title": "JAWS",
       "sub": "Boat ride with the Express Pass",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
@@ -422,7 +425,8 @@
       "sort": "18:05",
       "title": "Mario Kart: Koopa's Challenge",
       "sub": "Super Nintendo World, with the Express Pass",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
@@ -430,21 +434,24 @@
       "sort": "18:40",
       "title": "Picked up a Boo keychain",
       "sub": "Souvenir from Super Nintendo World",
-      "badge": "GOT IT!"
+      "badge": "GOT IT!",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
       "time": "Dinner",
       "sort": "18:50",
       "title": "Dinner at Kinopio's Cafe",
-      "sub": "The Toad-themed restaurant inside Super Nintendo World"
+      "sub": "The Toad-themed restaurant inside Super Nintendo World",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
       "time": "Night",
       "sort": "19:30",
       "title": "Harry Potter and the Forbidden Journey",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
@@ -452,14 +459,16 @@
       "sort": "20:30",
       "title": "Zombie de Dance",
       "sub": "Halloween Horror Nights street zombies and the big dance show",
-      "badge": "SAW IT!"
+      "badge": "SAW IT!",
+      "under": "universal"
     },
     {
       "date": "2026-10-16",
       "time": "Night",
       "sort": "21:00",
       "title": "Strolled Hollywood and the Snoopy area",
-      "sub": "Then home to rest those sore feet"
+      "sub": "Last stop before heading home",
+      "under": "universal"
     },
     {
       "date": "2026-10-20",

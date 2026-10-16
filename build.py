@@ -121,10 +121,23 @@ def row_html(r, leg):
         title_html = f'<div style="font-size: 17px; font-weight: 700; line-height: 1.35">{title}</div>'
     sub = (f'\n<div style="font-size: 14px; font-weight: 500; line-height: 1.45; color: #6E5A6E">{esc(r["sub"])}</div>'
            if r.get("sub") else "")
+    kids = ""
+    if r.get("children"):
+        items = []
+        for c in r["children"]:
+            cb = ('<span style="font-size: 11px; font-weight: 900; line-height: 1.3; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 999px; '
+                  f'background: #FFE3EB; color: #A3214A">{esc(c["badge"])}</span>') if c.get("badge") else ""
+            csub = (f'<div style="font-size: 13px; font-weight: 500; line-height: 1.4; color: #6E5A6E">{esc(c["sub"])}</div>' if c.get("sub") else "")
+            items.append('<li style="display: flex; gap: 8px; align-items: flex-start">'
+                         f'<span aria-hidden="true" style="flex: none; width: 8px; height: 8px; margin-top: 7px; border-radius: 50%; background: {leg["mid"]}"></span>'
+                         '<div style="min-width: 0"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px">'
+                         f'<span style="font-size: 15px; font-weight: 700; line-height: 1.4">{esc(c["title"])}</span>{cb}</div>{csub}</div></li>')
+        kids = (f'\n<ul style="list-style: none; margin: 8px 0 0; padding: 10px 12px; border-radius: 14px; background: {leg["pastel"]}; '
+                'display: flex; flex-direction: column; gap: 8px">' + "".join(items) + '</ul>')
     return ('<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px">\n'
             f'<span style="flex: 0 0 84px; text-align: center; padding: 4px 0; border-radius: 999px; background: {leg["pastel"]}; '
             f'color: {leg["text"]}; font-size: 13px; font-weight: 900; line-height: 1.3">{esc(r["time"])}</span>\n'
-            f'<div style="flex: 1 1 200px; min-width: 0">\n{title_html}{sub}\n</div>\n</div>\n')
+            f'<div style="flex: 1 1 200px; min-width: 0">\n{title_html}{sub}{kids}\n</div>\n</div>\n')
 
 
 def day_html(d, rows, leg, travel):
@@ -282,7 +295,8 @@ def build(feed_text):
 
     for m in X.get("manual", []):
         d = date.fromisoformat(m["date"])
-        add(d, {"sort": m.get("sort", "00:00"), "time": m["time"], "title": m["title"], "sub": m.get("sub", ""), "badge": m.get("badge", "")})
+        add(d, {"sort": m.get("sort", "00:00"), "time": m.get("time", ""), "title": m["title"], "sub": m.get("sub", ""),
+                "badge": m.get("badge", ""), "under": m.get("under", "").lower()})
 
     # Days, grouped into legs
     days_by_leg = {lg["id"]: [] for lg in legs}
@@ -293,6 +307,14 @@ def build(feed_text):
         if not lg:
             continue
         rs = sorted(rows[d], key=lambda r: (r["time"] not in ("All day",), r["sort"]))
+        parents = [r for r in rs if not r.get("under")]
+        for c in [r for r in rs if r.get("under")]:
+            host = next((p for p in parents if c["under"] in p["title"].lower()), None)
+            if host:
+                host.setdefault("children", []).append(c)
+            else:
+                parents.append(c)  # no matching place that day: show it on its own
+        rs = sorted(parents, key=lambda r: (r["time"] not in ("All day",), r["sort"]))
         days_by_leg[lg["id"]].append(day_html(d, rs, lg, d in travel))
 
     page = (HERE / "template.html").read_text(encoding="utf-8")
