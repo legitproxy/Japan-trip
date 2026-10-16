@@ -402,6 +402,14 @@
     },
     {
       "date": "2026-10-16",
+      "time": "Afternoon",
+      "sort": "17:00",
+      "title": "JAWS",
+      "sub": "Boat ride with the Express Pass",
+      "badge": "DID IT!"
+    },
+    {
+      "date": "2026-10-16",
       "time": "6:00 PM",
       "sort": "18:05",
       "title": "Mario Kart: Koopa's Challenge",
@@ -422,6 +430,28 @@
       "sort": "18:50",
       "title": "Dinner at Kinopio's Cafe",
       "sub": "The Toad-themed restaurant inside Super Nintendo World"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "Night",
+      "sort": "19:30",
+      "title": "Harry Potter and the Forbidden Journey",
+      "badge": "DID IT!"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "Night",
+      "sort": "20:30",
+      "title": "Zombie de Dance",
+      "sub": "Halloween Horror Nights street zombies and the big dance show",
+      "badge": "SAW IT!"
+    },
+    {
+      "date": "2026-10-16",
+      "time": "Night",
+      "sort": "21:00",
+      "title": "Strolled Hollywood and the Snoopy area",
+      "sub": "Then home to rest those sore feet"
     },
     {
       "date": "2026-10-20",
