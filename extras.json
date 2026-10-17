@@ -293,7 +293,8 @@
       "match": "teamlab",
       "if_location": "Kyoto",
       "title": "teamLab Biovortex Kyoto",
-      "sub": "Near Kyoto Station · until {end}"
+      "sub": "Surreal, interactive digital art. A first-class experience!",
+      "badge": "SAW IT!"
     },
     {
       "match": "teamlab biovortex",
