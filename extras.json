@@ -480,6 +480,28 @@
       "under": "universal"
     },
     {
+      "date": "2026-10-17",
+      "time": "Midday",
+      "sort": "12:30",
+      "title": "Uji",
+      "sub": "Japan's matcha capital, between Osaka and Kyoto",
+      "badge": "DID IT!"
+    },
+    {
+      "date": "2026-10-17",
+      "sort": "12:31",
+      "title": "All the matcha treats",
+      "sub": "Matcha everything, and it was amazing",
+      "badge": "TRIED IT!",
+      "under": "uji"
+    },
+    {
+      "date": "2026-10-17",
+      "sort": "12:32",
+      "title": "Wagyu dishes",
+      "under": "uji"
+    },
+    {
       "date": "2026-10-20",
       "time": "All day",
       "title": "Shopping spree in Tokyo"
