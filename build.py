@@ -215,6 +215,42 @@ def ap_name(c):
 
 
 # ---------- main ----------
+STOP = {"the", "a", "an", "at", "in", "on", "of", "to", "and", "hike", "visit", "trip", "walk", "tour"}
+
+
+def words(t):
+    return {w for w in re.findall(r"[a-z0-9\u3040-\u30ff\u4e00-\u9fff]+", t.lower()) if w not in STOP}
+
+
+def same_thing(a, b):
+    wa, wb = words(a), words(b)
+    return bool(wa and wb) and (wa <= wb or wb <= wa)
+
+
+def dedupe(day_rows):
+    """One row per thing: when a hand-added row and a TripIt row describe the same place,
+    keep the hand-added one (it has our notes and badges) and take TripIt's exact time."""
+    feed = [r for r in day_rows if r.get("src") == "feed"]
+    out = [r for r in day_rows if r.get("src") != "feed"]
+    for f in feed:
+        twin = next((m for m in out if m.get("src") != "feed" and not m.get("under") and same_thing(m["title"], f["title"])), None)
+        if twin:
+            twin["time"], twin["sort"] = f["time"], f["sort"]
+            if f.get("recheck"):
+                twin["recheck"] = True
+        else:
+            out.append(f)
+    # exact repeats of the same title on the same day (any source)
+    seen, final = set(), []
+    for r in out:
+        k = (" ".join(sorted(words(r["title"]))), r.get("under", ""))
+        if k in seen:
+            continue
+        seen.add(k)
+        final.append(r)
+    return final
+
+
 def build(feed_text):
     events = parse_ics(feed_text)
     legs = X["legs"]
@@ -280,7 +316,7 @@ def build(feed_text):
         sort = conf.get("sort") or {"Morning": "08:00", "Midday": "12:00", "Afternoon": "14:00", "Evening": "18:00"}.get(label, st.strftime("%H:%M"))
         r = {"sort": sort, "time": label, "title": conf.get("title", s),
              "sub": fill(conf.get("sub", f"Until {hm(en)}" if (en - st) >= timedelta(minutes=90) else "")),
-             "badge": conf.get("badge", ""), "under": conf.get("under", "").lower()}
+             "badge": conf.get("badge", ""), "under": conf.get("under", "").lower(), "src": "feed"}
         # Flag plans whose address is in a different city from where you're staying that night.
         lg = leg_for(d)
         loc = e["LOCATION"].replace("東京都", "東京")  # 東京都 (Tokyo-to) contains 京都 (Kyoto)
@@ -307,7 +343,8 @@ def build(feed_text):
         lg = leg_for(d)
         if not lg:
             continue
-        rs = sorted(rows[d], key=lambda r: (r["time"] not in ("All day",), r["sort"]))
+        rs = dedupe(rows[d])
+        rs = sorted(rs, key=lambda r: (r["time"] not in ("All day",), r["sort"]))
         parents = [r for r in rs if not r.get("under")]
         for c in [r for r in rs if r.get("under")]:
             host = next((p for p in parents if c["under"] in p["title"].lower()), None)
