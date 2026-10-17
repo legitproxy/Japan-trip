@@ -308,8 +308,11 @@
     },
     {
       "match": "hikiniku",
-      "title": "Hikiniku to Come, Higashiyama",
-      "sub": "Charcoal-grilled hamburg steak lunch"
+      "title": "Hikiniku to Come, Gion",
+      "sub": "Charcoal-grilled hamburg steak lunch · lined up early and scored the 11:15 slot!",
+      "time": "11:15 AM",
+      "sort": "11:15",
+      "badge": "GOT IT!"
     },
     {
       "match": "tsukitouro",
