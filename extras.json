@@ -573,6 +573,22 @@
       "sort": "14:36",
       "title": "Shinkansen, Kyoto → Tokyo",
       "sub": "Seats with oversized-baggage area · back to Tokyo!"
+    },
+    {
+      "date": "2026-10-18",
+      "time": "Afternoon",
+      "sort": "13:30",
+      "title": "Nishiki Market",
+      "sub": "Kyoto's covered food street",
+      "badge": "DID IT!"
+    },
+    {
+      "date": "2026-10-18",
+      "sort": "13:31",
+      "title": "Furikake & dashi haul",
+      "sub": "Ochanokosaisai (おちゃのこさいさい), Nishiki",
+      "badge": "GOT IT!",
+      "under": "nishiki market"
     }
   ],
   "notes": [
