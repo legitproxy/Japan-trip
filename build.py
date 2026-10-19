@@ -109,6 +109,20 @@ ICONS = {
 }
 
 
+def photos_html(paths, title):
+    """A row of rounded thumbnails; tapping one opens the full photo."""
+    if not paths:
+        return ""
+    imgs = "".join(
+        f'<a href="{esc(p)}" target="_blank" rel="noopener" style="flex: none; display: block; line-height: 0">'
+        f'<img src="{esc(p)}" alt="{esc(title)}" loading="lazy" '
+        'style="height: 120px; width: auto; max-width: 200px; object-fit: cover; border-radius: 14px; '
+        'box-shadow: 0 2px 8px rgba(80, 40, 70, 0.15)"></a>'
+        for p in paths)
+    return ('\n<div style="display: flex; gap: 8px; margin-top: 8px; overflow-x: auto; padding-bottom: 4px; '
+            f'-webkit-overflow-scrolling: touch">{imgs}</div>')
+
+
 def row_html(r, leg):
     title = esc(r["title"])
     badge = RECHECK if r.get("recheck") else (
@@ -131,13 +145,14 @@ def row_html(r, leg):
             items.append('<li style="display: flex; gap: 8px; align-items: flex-start">'
                          f'<span aria-hidden="true" style="flex: none; width: 8px; height: 8px; margin-top: 7px; border-radius: 50%; background: {leg["mid"]}"></span>'
                          '<div style="min-width: 0"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px">'
-                         f'<span style="font-size: 15px; font-weight: 700; line-height: 1.4">{esc(c["title"])}</span>{cb}</div>{csub}</div></li>')
+                         f'<span style="font-size: 15px; font-weight: 700; line-height: 1.4">{esc(c["title"])}</span>{cb}</div>{csub}'
+                         f'{photos_html(c.get("photos"), c["title"])}</div></li>')
         kids = (f'\n<ul style="list-style: none; margin: 8px 0 0; padding: 10px 12px; border-radius: 14px; background: {leg["pastel"]}; '
                 'display: flex; flex-direction: column; gap: 8px">' + "".join(items) + '</ul>')
     return ('<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px">\n'
             f'<span style="flex: 0 0 84px; text-align: center; padding: 4px 0; border-radius: 999px; background: {leg["pastel"]}; '
             f'color: {leg["text"]}; font-size: 13px; font-weight: 900; line-height: 1.3">{esc(r["time"])}</span>\n'
-            f'<div style="flex: 1 1 200px; min-width: 0">\n{title_html}{sub}{kids}\n</div>\n</div>\n')
+            f'<div style="flex: 1 1 200px; min-width: 0">\n{title_html}{sub}{photos_html(r.get("photos"), r["title"])}{kids}\n</div>\n</div>\n')
 
 
 def day_html(d, rows, leg, travel):
@@ -316,7 +331,8 @@ def build(feed_text):
         sort = conf.get("sort") or {"Morning": "08:00", "Midday": "12:00", "Afternoon": "14:00", "Evening": "18:00"}.get(label, st.strftime("%H:%M"))
         r = {"sort": sort, "time": label, "title": conf.get("title", s),
              "sub": fill(conf.get("sub", f"Until {hm(en)}" if (en - st) >= timedelta(minutes=90) else "")),
-             "badge": conf.get("badge", ""), "under": conf.get("under", "").lower(), "src": "feed"}
+             "badge": conf.get("badge", ""), "under": conf.get("under", "").lower(), "src": "feed",
+             "photos": conf.get("photos", [])}
         # Flag plans whose address is in a different city from where you're staying that night.
         lg = leg_for(d)
         loc = e["LOCATION"].replace("東京都", "東京")  # 東京都 (Tokyo-to) contains 京都 (Kyoto)
@@ -333,7 +349,7 @@ def build(feed_text):
     for m in X.get("manual", []):
         d = date.fromisoformat(m["date"])
         add(d, {"sort": m.get("sort", "00:00"), "time": m.get("time", ""), "title": m["title"], "sub": m.get("sub", ""),
-                "badge": m.get("badge", ""), "under": m.get("under", "").lower()})
+                "badge": m.get("badge", ""), "under": m.get("under", "").lower(), "photos": m.get("photos", [])})
 
     # Days, grouped into legs
     days_by_leg = {lg["id"]: [] for lg in legs}
