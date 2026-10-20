@@ -597,7 +597,11 @@
       "sort": "09:30",
       "title": "Nijō Castle",
       "sub": "The shōgun's palace: chirping nightingale floors, tiger rooms, Seiryū-en Garden",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "photos": [
+        "assets/photos/2026-10-19-nijo-crew.jpg",
+        "assets/photos/2026-10-19-nijo-gate.jpg"
+      ]
     },
     {
       "date": "2026-10-19",
