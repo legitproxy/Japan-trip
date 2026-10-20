@@ -671,6 +671,18 @@
       "sub": "Clothes for the whole family",
       "badge": "SHOPPED IT!",
       "under": "shopping spree"
+    },
+    {
+      "date": "2026-10-20",
+      "time": "Afternoon",
+      "sort": "12:45",
+      "title": "Melon pan at Kagetsudō, Asakusa",
+      "sub": "Crispy, sugary jumbo melon pan stuffed with matcha soft serve · baking since 1945",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-20-kagetsudo.jpg",
+        "assets/photos/2026-10-20-kagetsudo-matcha.jpg"
+      ]
     }
   ],
   "notes": [
