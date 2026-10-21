@@ -327,7 +327,19 @@
     {
       "match": "yakiniku kappo note",
       "title": "Yakiniku Kappo Note",
-      "sub": "A5 wagyu omakase, Azabu-juban"
+      "sub": "A5 wagyu omakase in Azabu-Jūban · course after course of wagyu with wine + gold-leaf sake pairings. AMAZING!",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-21-kappo-wagyu-box.jpg",
+        "assets/photos/2026-10-21-kappo-clip.mp4",
+        "assets/photos/2026-10-21-kappo-calligraphy.jpg",
+        "assets/photos/2026-10-21-kappo-wagyu-jelly.jpg",
+        "assets/photos/2026-10-21-kappo-wagyu-yolk.jpg",
+        "assets/photos/2026-10-21-kappo-fillet.jpg",
+        "assets/photos/2026-10-21-kappo-monaka.jpg",
+        "assets/photos/2026-10-21-kappo-gold-sake.jpg",
+        "assets/photos/2026-10-21-kappo-dessert.jpg"
+      ]
     },
     {
       "match": "ginza happo",

@@ -113,12 +113,17 @@ def photos_html(paths, title):
     """A row of rounded thumbnails; tapping one opens the full photo."""
     if not paths:
         return ""
-    imgs = "".join(
-        f'<a href="{esc(p)}" target="_blank" rel="noopener" style="flex: none; display: block; line-height: 0">'
-        f'<img src="{esc(p)}" alt="{esc(title)}" loading="lazy" '
-        'style="height: 120px; width: auto; max-width: 200px; object-fit: cover; border-radius: 14px; '
-        'box-shadow: 0 2px 8px rgba(80, 40, 70, 0.15)"></a>'
-        for p in paths)
+    style = ('height: 120px; width: auto; max-width: 200px; object-fit: cover; border-radius: 14px; '
+             'box-shadow: 0 2px 8px rgba(80, 40, 70, 0.15)')
+
+    def one(p):
+        if p.lower().endswith(".mp4"):
+            return (f'<video src="{esc(p)}" autoplay muted loop playsinline preload="metadata" '
+                    f'aria-label="{esc(title)}" style="flex: none; {style}"></video>')
+        return (f'<a href="{esc(p)}" target="_blank" rel="noopener" style="flex: none; display: block; line-height: 0">'
+                f'<img src="{esc(p)}" alt="{esc(title)}" loading="lazy" style="{style}"></a>')
+
+    imgs = "".join(one(p) for p in paths)
     return ('\n<div style="display: flex; gap: 8px; margin-top: 8px; overflow-x: auto; padding-bottom: 4px; '
             f'-webkit-overflow-scrolling: touch">{imgs}</div>')
 
