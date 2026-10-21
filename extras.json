@@ -767,6 +767,17 @@
       "title": "Flat white near Shinjuku-gyoemmae",
       "sub": "Coffee break, saving room for tonight's wagyu dinner",
       "badge": "DRANK IT!"
+    },
+    {
+      "date": "2026-10-21",
+      "time": "Night",
+      "sort": "21:15",
+      "title": "Beyblade hunt success at Bic Camera Shibuya",
+      "sub": "Scored a Beyblade X UX-21 set at the Hachikō Exit store right by Shibuya Crossing",
+      "badge": "GOT IT!",
+      "photos": [
+        "assets/photos/2026-10-21-beyblade-bic.jpg"
+      ]
     }
   ],
   "notes": [
