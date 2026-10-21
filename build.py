@@ -342,7 +342,8 @@ def build(feed_text):
         lg = leg_for(d)
         loc = e["LOCATION"].replace("東京都", "東京")  # 東京都 (Tokyo-to) contains 京都 (Kyoto)
         moving = low.startswith(("check-in", "check-out")) or "shinkansen" in low or "train" in low
-        if lg and loc and not moving and not any(c.lower() in loc.lower() for c in lg["cities"]):
+        if (lg and loc and not moving and d.isoformat() not in X.get("recheck_ok_dates", [])
+                and not any(c.lower() in loc.lower() for c in lg["cities"])):
             other = next((L["cities"][0] for L in legs for c in L["cities"] if c.lower() in loc.lower()), None)
             if other:
                 r["recheck"] = True
