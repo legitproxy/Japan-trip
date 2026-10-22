@@ -367,7 +367,7 @@ def build(feed_text):
             continue
         rs = dedupe(rows[d])
         rs = sorted(rs, key=lambda r: (r["time"] not in ("All day",), r["sort"]))
-        if os.environ.get("GITHUB_ACTIONS"):
+        if os.environ.get("GITHUB_ACTIONS") and d >= datetime.now(ZoneInfo("Asia/Tokyo")).date():
             # Same names/times the public page shows; lets the trip assistant read the agenda.
             lines = [f'{r["time"] or "-"} | {r["title"]}' + (f' | {r["sub"]}' if r.get("sub") else "") for r in rs]
             msg = "%0A".join(l.replace("%", "%25").replace("\n", " ") for l in lines)
