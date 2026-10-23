@@ -797,6 +797,17 @@
       "title": "Sushi at Uobei Shibuya Dōgenzaka (魚べい)",
       "sub": "Touchscreen-order sushi delivered by high-speed express lanes",
       "badge": "ATE IT!"
+    },
+    {
+      "date": "2026-10-22",
+      "time": "Night",
+      "sort": "23:00",
+      "title": "Going-home party with the crew",
+      "sub": "Japan after-party at the Airbnb to celebrate the end of the trip",
+      "badge": "PARTIED!",
+      "photos": [
+        "assets/photos/2026-10-22-going-home-party.jpg"
+      ]
     }
   ],
   "notes": [
