@@ -869,5 +869,6 @@
     "title": "Tour complete!",
     "sub": "Tokyo, Fuji, Osaka, Kyoto & back · the whole crew made it home safe",
     "footer": "おつかれさま！ Thanks for an amazing trip"
-  }
+  },
+  "show_addresses": true
 }

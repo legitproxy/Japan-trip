@@ -8,4 +8,4 @@ The kawaii trip itinerary, rebuilt every hour from TripIt.
 - **Page design:** `template.html`.
 
 The TripIt feed link is stored as the repository secret `TRIPIT_FEED_URL` and is never published.
-Only plan names and times appear on the page, never addresses, phone numbers or confirmation details.
+Plan names, times and venue addresses appear on the page (addresses only once `show_addresses` is on in extras.json). Lodging addresses, phone numbers and confirmation details never appear.

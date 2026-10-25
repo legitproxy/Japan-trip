@@ -2,7 +2,8 @@
 
 Usage: python build.py feed.ics site/index.html
 Hand-written touches (nicer names, little descriptions, extra rows) live in extras.json.
-Only names and times are published: addresses, phone numbers and notes from TripIt are never shown.
+Published: names, times and (after the trip, when "show_addresses" is on) venue addresses. Lodging addresses, phone numbers,
+confirmation numbers and notes from TripIt are never shown.
 """
 import html, json, os, re, sys
 from datetime import datetime, date, timedelta, timezone
@@ -77,6 +78,30 @@ def parse_ics(text):
     return out
 
 
+PHONE = re.compile(r"(\+?\d[\d\s().-]{7,}\d)")
+
+
+def clean_addr(loc):
+    """Venue address for public display: drop phone numbers and anything that looks like a booking code."""
+    a = PHONE.sub("", loc or "")
+    a = re.sub(r"(?i)(tel|phone|conf(irmation)?|booking|reservation)\b[^,\n]*", "", a)
+    a = re.sub(r"\s{2,}", " ", a).strip(" ,;·\n")
+    return a
+
+
+PIN = ('<svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" '
+       'stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 3px"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"></path>'
+       '<circle cx="12" cy="10" r="2.5"></circle></svg>')
+
+
+def addr_html(a):
+    if not a:
+        return ""
+    from urllib.parse import quote
+    return ('\n<a href="https://www.google.com/maps/search/?api=1&amp;query=' + quote(a) + '" target="_blank" rel="noopener" '
+            'style="display: inline-flex; gap: 5px; align-items: flex-start; margin-top: 2px; font-size: 13px; font-weight: 500; line-height: 1.4; '
+            f'color: #8A6F8A; text-decoration: none">{PIN}<span>{esc(a)}</span></a>')
+
 # ---------- formatting ----------
 def hm(dt):
     return dt.strftime("%I:%M %p").lstrip("0")
@@ -140,6 +165,7 @@ def row_html(r, leg):
         title_html = f'<div style="font-size: 17px; font-weight: 700; line-height: 1.35">{title}</div>'
     sub = (f'\n<div style="font-size: 14px; font-weight: 500; line-height: 1.45; color: #6E5A6E">{esc(r["sub"])}</div>'
            if r.get("sub") else "")
+    sub += addr_html(r.get("addr", ""))
     kids = ""
     if r.get("children"):
         items = []
@@ -256,6 +282,8 @@ def dedupe(day_rows):
         twin = next((m for m in out if m.get("src") != "feed" and not m.get("under") and same_thing(m["title"], f["title"])), None)
         if twin:
             twin["time"], twin["sort"] = f["time"], f["sort"]
+            if f.get("addr") and not twin.get("addr"):
+                twin["addr"] = f["addr"]
             if f.get("recheck"):
                 twin["recheck"] = True
         else:
@@ -360,6 +388,9 @@ def build(feed_text):
              "sub": fill(conf.get("sub", f"Until {hm(en)}" if (en - st) >= timedelta(minutes=90) else "")),
              "badge": conf.get("badge", ""), "under": conf.get("under", "").lower(), "src": "feed",
              "photos": conf.get("photos", [])}
+        if (X.get("show_addresses") and not conf.get("hide_address")
+                and not low.startswith(("check-in", "check-out")) and "shinkansen" not in low and "train" not in low):
+            r["addr"] = clean_addr(e["LOCATION"])
         # Flag plans whose address is in a different city from where you're staying that night.
         lg = leg_for(d)
         loc = e["LOCATION"].replace("東京都", "東京")  # 東京都 (Tokyo-to) contains 京都 (Kyoto)
@@ -438,6 +469,8 @@ def build(feed_text):
                                  f"Lands {ap_name(home['to'])} {hm(home['arr'])}" + (" the same day" if same else f" {md(home['arr'])}"), crew))
     page = page.replace("{{FLIGHTS}}", '<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px">\n' + "".join(cards) + "</div>")
     page = page.replace("{{NOTES}}", "".join(notes))
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::notice title=Addresses::{page.count('maps/search/?api=1&amp;query=')} venue addresses shown")
     page = page.replace("{{BANNER}}", banner_html())
     page = page.replace("{{FOOTER}}", esc(X.get("complete", {}).get("footer", "")) or "楽しんでね！ Have a great trip")
     now = datetime.now(TZ)
