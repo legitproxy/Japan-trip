@@ -349,7 +349,11 @@
     {
       "match": "ginza happo",
       "title": "Ginza Happo, Shinjuku",
-      "sub": "Dinner"
+      "sub": "All-you-can-eat seafood buffet to close out the last night in Tokyo",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-23-ginza-happo-sign.jpg"
+      ]
     }
   ],
   "manual": [
