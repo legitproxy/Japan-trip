@@ -852,16 +852,7 @@
       "badge": "DONE!"
     }
   ],
-  "notes": [
-    {
-      "icon": "bag",
-      "html": "<strong>Train days:</strong> Suitcases over 160 cm total (length + width + height) need a Shinkansen seat with an oversized-baggage area."
-    },
-    {
-      "icon": "clock",
-      "html": "<strong>Oct 24:</strong> Leave Yotsuya by about 7:30 AM. ANA check-in closes at 9:25 AM for the 10:25 flight."
-    }
-  ],
+  "notes": [],
   "recheck_ok_dates": [
     "2026-10-19"
   ],

@@ -468,7 +468,8 @@ def build(feed_text):
                                  f"{home['dep'].strftime('%a')}, {md(home['dep'])} · {hm(home['dep'])}",
                                  f"Lands {ap_name(home['to'])} {hm(home['arr'])}" + (" the same day" if same else f" {md(home['arr'])}"), crew))
     page = page.replace("{{FLIGHTS}}", '<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px">\n' + "".join(cards) + "</div>")
-    page = page.replace("{{NOTES}}", "".join(notes))
+    HEADSUP = '<section aria-labelledby="heads-h" style="margin-top: 36px; background: #FFF6C8; border: 3px solid #FFE27A; border-radius: 24px; padding: 22px; transform: rotate(-0.6deg)">\n<h2 id="heads-h" style="margin: 0 0 12px; font-family: \'Mochiy Pop One\', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.3">Heads-up! 注意</h2>\n<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">\n{{NOTES}}\n</ul>\n</section>'
+    page = page.replace("{{HEADSUP}}", HEADSUP.replace("{{NOTES}}", "".join(notes)) if notes else "")
     if os.environ.get("GITHUB_ACTIONS"):
         print(f"::notice title=Addresses::{page.count('maps/search/?api=1&amp;query=')} venue addresses shown")
     page = page.replace("{{BANNER}}", banner_html())
