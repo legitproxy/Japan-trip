@@ -177,7 +177,7 @@ def row_html(r, leg):
                          f'<span aria-hidden="true" style="flex: none; width: 8px; height: 8px; margin-top: 7px; border-radius: 50%; background: {leg["mid"]}"></span>'
                          '<div style="min-width: 0"><div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px">'
                          f'<span style="font-size: 15px; font-weight: 700; line-height: 1.4">{esc(c["title"])}</span>{cb}</div>{csub}'
-                         f'{photos_html(c.get("photos"), c["title"])}</div></li>')
+                         f'{addr_html(c.get("addr", ""))}{photos_html(c.get("photos"), c["title"])}</div></li>')
         kids = (f'\n<ul style="list-style: none; margin: 8px 0 0; padding: 10px 12px; border-radius: 14px; background: {leg["pastel"]}; '
                 'display: flex; flex-direction: column; gap: 8px">' + "".join(items) + '</ul>')
     return ('<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px">\n'

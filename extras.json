@@ -395,7 +395,8 @@
       "time": "Afternoon",
       "sort": "13:30",
       "title": "Oishi Park",
-      "sub": "Kochia turning crimson by the lake"
+      "sub": "Kochia turning crimson by the lake",
+      "addr": "2585-85 Ōishi, Fujikawaguchiko, Yamanashi"
     },
     {
       "date": "2026-10-14",
@@ -441,7 +442,8 @@
       "sort": "07:00",
       "title": "Minoh Falls hike",
       "sub": "Hiked down from the falls to Minoh Station through the greenery",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "addr": "2-2 Minoo-kōen, Minoh, Osaka"
     },
     {
       "date": "2026-10-16",
@@ -449,7 +451,8 @@
       "sort": "11:30",
       "title": "Osaka Castle",
       "sub": "Walked and rode the trolley around the castle grounds",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "addr": "1-1 Ōsakajō, Chuo Ward, Osaka"
     },
     {
       "date": "2026-10-16",
@@ -542,7 +545,8 @@
       "title": "Wagyu burger & wagyudon at Food Park",
       "under": "uji",
       "sub": "Inside Osakaya Market (大阪屋マーケット), Uji",
-      "badge": "ATE IT!"
+      "badge": "ATE IT!",
+      "addr": "Osakaya Market, Myoraku-41 Uji, Kyoto"
     },
     {
       "date": "2026-10-17",
@@ -550,7 +554,8 @@
       "sort": "20:30",
       "title": "Ramen at ICHIRAN Kyoto Karasuma",
       "sub": "一蘭 京都烏丸店 · Rated 9/10, oishii! Next time: spice level 6+",
-      "badge": "ATE IT!"
+      "badge": "ATE IT!",
+      "addr": "Muse 389 Kyoto 2F, 102-3 Tachiuri Nakanochō, Shimogyo Ward, Kyoto"
     },
     {
       "date": "2026-10-18",
@@ -558,7 +563,8 @@
       "sort": "09:30",
       "title": "Fushimi Inari Taisha",
       "sub": "Thousands of red torii gates",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "addr": "68 Fukakusa Yabunouchichō, Fushimi Ward, Kyoto"
     },
     {
       "date": "2026-10-18",
@@ -566,7 +572,8 @@
       "title": "Custom chopsticks with our names engraved",
       "sub": "Yuzen Chopstick Store (手作り箸工房 遊膳), Fushimi",
       "badge": "GOT IT!",
-      "under": "fushimi inari"
+      "under": "fushimi inari",
+      "addr": "63-4 Fukakusa Inari Nakanochō, Fushimi Ward, Kyoto"
     },
     {
       "date": "2026-10-20",
@@ -602,7 +609,8 @@
       "sort": "14:00",
       "title": "Don Quijote Shijō-dōri",
       "sub": "ドン・キホーテ四条通店 · surprisingly calm, not overwhelming at all!",
-      "badge": "SHOPPED IT!"
+      "badge": "SHOPPED IT!",
+      "addr": "5-5 Tachiuri Higashimachi, Shimogyo Ward, Kyoto"
     },
     {
       "date": "2026-10-19",
@@ -618,7 +626,8 @@
       "sort": "13:30",
       "title": "Nishiki Market",
       "sub": "Kyoto's covered food street",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "addr": "Nishikikōji-dōri, Nakagyo Ward, Kyoto"
     },
     {
       "date": "2026-10-18",
@@ -626,7 +635,8 @@
       "title": "Furikake & dashi haul",
       "sub": "Ochanokosaisai (おちゃのこさいさい), Nishiki",
       "badge": "GOT IT!",
-      "under": "nishiki market"
+      "under": "nishiki market",
+      "addr": "497 Nakauoyachō, Nakagyo Ward, Kyoto"
     },
     {
       "date": "2026-10-19",
@@ -638,7 +648,8 @@
       "photos": [
         "assets/photos/2026-10-19-nijo-crew.jpg",
         "assets/photos/2026-10-19-nijo-gate.jpg"
-      ]
+      ],
+      "addr": "541 Nijōjōchō, Nakagyo Ward, Kyoto"
     },
     {
       "date": "2026-10-19",
@@ -649,7 +660,8 @@
       "badge": "ATE IT!",
       "photos": [
         "assets/photos/2026-10-19-curry-family.jpg"
-      ]
+      ],
+      "addr": "Yokoyama Bldg 1F, 229 Itoyachō, Shimogyo Ward, Kyoto"
     },
     {
       "date": "2026-10-19",
@@ -657,7 +669,8 @@
       "sort": "12:00",
       "title": "Knife shopping at Yoshisada Hamono",
       "sub": "Kyoto blacksmith's shop on Shichijō · knives + a natural sharpening stone",
-      "badge": "GOT IT!"
+      "badge": "GOT IT!",
+      "addr": "6-chōme-1-4 Honmachi, Higashiyama Ward, Kyoto"
     },
     {
       "date": "2026-10-19",
@@ -676,7 +689,8 @@
       "badge": "ATE IT!",
       "photos": [
         "assets/photos/2026-10-20-tokyo-curry-pan.jpg"
-      ]
+      ],
+      "addr": "1-20-4 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -688,7 +702,8 @@
       "photos": [
         "assets/photos/2026-10-20-anshinya.jpg",
         "assets/photos/2026-10-20-anshinya-menu.jpg"
-      ]
+      ],
+      "addr": "1-37-11 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -699,7 +714,8 @@
       "badge": "ATE IT!",
       "photos": [
         "assets/photos/2026-10-20-unana-eel-onigiri.jpg"
-      ]
+      ],
+      "addr": "2-7-21 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -707,7 +723,8 @@
       "title": "Uniqlo haul in Asakusa",
       "sub": "Clothes for the whole family",
       "badge": "SHOPPED IT!",
-      "under": "shopping spree"
+      "under": "shopping spree",
+      "addr": "Tokyo Rakutenchi Asakusa Bldg 1–2F, 2-6-7 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -719,7 +736,8 @@
       "photos": [
         "assets/photos/2026-10-20-kagetsudo.jpg",
         "assets/photos/2026-10-20-kagetsudo-matcha.jpg"
-      ]
+      ],
+      "addr": "2-7-13 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -730,7 +748,8 @@
       "under": "shopping spree",
       "photos": [
         "assets/photos/2026-10-20-3coins-stool.jpg"
-      ]
+      ],
+      "addr": "ROX 2F, 1-25-15 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -742,7 +761,8 @@
       "photos": [
         "assets/photos/2026-10-20-edo-glass.jpg",
         "assets/photos/2026-10-20-nihon-miyabi.jpg"
-      ]
+      ],
+      "addr": "The Asakusa Residence 103, 1-11-1 Asakusa, Taito City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -754,7 +774,8 @@
       "photos": [
         "assets/photos/2026-10-20-ginza-karen-suitcase.jpg",
         "assets/photos/2026-10-20-ginza-karen.jpg"
-      ]
+      ],
+      "addr": "1-15-6 Nihonbashi Ningyōchō, Chuo City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -762,7 +783,8 @@
       "sort": "20:30",
       "title": "Dinner at Gyopao Gyoza, Shinjuku",
       "sub": "Ordered almost all of the top 6 dishes and every one was great · the whole crew rated it a 10/10 experience!",
-      "badge": "ATE IT!"
+      "badge": "ATE IT!",
+      "addr": "Hironaga Bldg 3F, 3-35-13 Shinjuku, Shinjuku City, Tokyo"
     },
     {
       "date": "2026-10-20",
@@ -797,7 +819,8 @@
       "badge": "GOT IT!",
       "photos": [
         "assets/photos/2026-10-21-beyblade-bic.jpg"
-      ]
+      ],
+      "addr": "2-5-9 Dōgenzaka, Shibuya, Tokyo"
     },
     {
       "date": "2026-10-22",
@@ -808,7 +831,8 @@
       "badge": "ATE IT!",
       "photos": [
         "assets/photos/2026-10-22-kombusui-tsukemen.jpg"
-      ]
+      ],
+      "addr": "Sunsala Daisan Gyoen 1F, 1-12-1 Shinjuku, Shinjuku City, Tokyo"
     },
     {
       "date": "2026-10-22",
@@ -816,7 +840,8 @@
       "sort": "14:00",
       "title": "Sushi at Uobei Shibuya Dōgenzaka (魚べい)",
       "sub": "Touchscreen-order sushi delivered by high-speed express lanes",
-      "badge": "ATE IT!"
+      "badge": "ATE IT!",
+      "addr": "Central Bldg 6 1F, 2-29-11 Dōgenzaka, Shibuya, Tokyo"
     },
     {
       "date": "2026-10-22",
@@ -838,7 +863,8 @@
       "badge": "ATE IT!",
       "photos": [
         "assets/photos/2026-10-23-tsujita-tsukemen.jpg"
-      ]
+      ],
+      "addr": "Ginza Yamato Bldg 1F, 3-8-12 Ginza, Chuo City, Tokyo"
     },
     {
       "date": "2026-10-23",
@@ -846,7 +872,8 @@
       "sort": "16:00",
       "title": "e☆earphone Akihabara",
       "sub": "Audio heaven across multiple floors · Dannon picked up a FiiO BTR17 Bluetooth DAC/amp for his HiFiMAN HE-500 headphones",
-      "badge": "GOT IT!"
+      "badge": "GOT IT!",
+      "addr": "Shintō Bldg, 4-7-1 Sotokanda, Chiyoda City, Tokyo"
     },
     {
       "date": "2026-10-24",
