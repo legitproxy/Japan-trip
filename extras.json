@@ -354,6 +354,17 @@
       "photos": [
         "assets/photos/2026-10-23-ginza-happo-sign.jpg"
       ]
+    },
+    {
+      "match": "azuki",
+      "title": "Azuki to Kōri, Yoyogi",
+      "sub": "Mango shaved ice capped with meringue, torched right at the counter",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-23-azuki-meringue.mp4",
+        "assets/photos/2026-10-23-azuki-torch.mp4",
+        "assets/photos/2026-10-23-azuki-final.mp4"
+      ]
     }
   ],
   "manual": [
