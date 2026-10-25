@@ -326,7 +326,10 @@
     {
       "match": "zen night",
       "title": "Zen Night Tokyo",
-      "sub": "Tokyo National Museum, Ueno · until {end}"
+      "sub": "Tokyo National Museum, Ueno · until {end}",
+      "photos": [
+        "assets/photos/2026-10-20-zen-night-crew.jpg"
+      ]
     },
     {
       "match": "yakiniku kappo note",
@@ -347,7 +350,8 @@
         "assets/photos/2026-10-21-kappo-wine-goutte.jpg",
         "assets/photos/2026-10-21-kappo-wine-gevrey.jpg",
         "assets/photos/2026-10-21-kappo-wine-vendemmie.jpg",
-        "assets/photos/2026-10-21-kappo-wine-noble.jpg"
+        "assets/photos/2026-10-21-kappo-wine-noble.jpg",
+        "assets/photos/2026-10-21-kappo-chefs.jpg"
       ]
     },
     {
@@ -361,7 +365,8 @@
         "assets/photos/2026-10-23-happo-seafood.mp4",
         "assets/photos/2026-10-23-happo-meats.mp4",
         "assets/photos/2026-10-23-happo-sake.mp4",
-        "assets/photos/2026-10-23-happo-dessert.mp4"
+        "assets/photos/2026-10-23-happo-dessert.mp4",
+        "assets/photos/2026-10-23-happo-grill-guide.jpg"
       ]
     },
     {
