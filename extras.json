@@ -287,7 +287,11 @@
     {
       "match": "teamlab planets",
       "title": "teamLab Planets, Toyosu",
-      "sub": "Barefoot in water: wear pants that roll up"
+      "sub": "Barefoot in water: wear pants that roll up",
+      "photos": [
+        "assets/photos/2026-10-21-teamlab-crew.jpg"
+      ],
+      "badge": "DID IT!"
     },
     {
       "match": "teamlab",
