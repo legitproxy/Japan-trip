@@ -853,5 +853,10 @@
   ],
   "recheck_ok_dates": [
     "2026-10-19"
-  ]
+  ],
+  "complete": {
+    "title": "Tour complete!",
+    "sub": "Tokyo, Fuji, Osaka, Kyoto & back · the whole crew made it home safe",
+    "footer": "おつかれさま！ Thanks for an amazing trip"
+  }
 }

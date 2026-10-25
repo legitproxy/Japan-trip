@@ -271,6 +271,28 @@ def dedupe(day_rows):
     return final
 
 
+def banner_html():
+    c = X.get("complete")
+    if not c:
+        return ""
+    items = X.get("manual", []) + X.get("events", [])
+    media = [p for i in items for p in i.get("photos", [])]
+    eats = sum(1 for i in items if i.get("badge") in ("ATE IT!", "DRANK IT!"))
+    moments = sum(1 for i in items if i.get("badge") and i.get("badge") != "DONE!")
+    stats = [(moments, "moments logged", "#FFE3EB", "#A3214A"), (eats, "meals &amp; drinks", "#FFEBD9", "#9A4300"),
+             (len(media), "photos &amp; clips", "#DDF3F4", "#1A6870")]
+    chips = "".join(
+        f'<span style="display: inline-flex; align-items: baseline; gap: 6px; padding: 6px 14px; border-radius: 999px; background: {bg}; color: {fg}; '
+        f'font-size: 14px; font-weight: 900; line-height: 1.4"><span style="font-family: \'Mochiy Pop One\', sans-serif; font-size: 18px; font-weight: 400">{n}</span>{label}</span>'
+        for n, label, bg, fg in stats)
+    return ('<section aria-label="Trip complete" style="margin: 0 auto 28px; max-width: 560px; text-align: center; padding: 20px 22px; border-radius: 24px; '
+            'background: #FFFFFF; border: 4px double #E0457B; transform: rotate(-1deg); box-shadow: 0 4px 14px rgba(163, 33, 74, 0.12)">\n'
+            '<p style="margin: 0; font-family: \'Mochiy Pop One\', sans-serif; font-size: clamp(22px, 5vw, 30px); font-weight: 400; line-height: 1.2; color: #E0457B; '
+            f'letter-spacing: 0.04em">{esc(c.get("title", "Tour complete!"))} <span lang="ja">完走！</span></p>\n'
+            f'<p style="margin: 6px 0 14px; font-size: 15px; font-weight: 700; line-height: 1.5; color: #6E5A6E">{esc(c.get("sub", ""))}</p>\n'
+            f'<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px">{chips}</div>\n</section>\n')
+
+
 def build(feed_text):
     events = parse_ics(feed_text)
     legs = X["legs"]
@@ -416,6 +438,8 @@ def build(feed_text):
                                  f"Lands {ap_name(home['to'])} {hm(home['arr'])}" + (" the same day" if same else f" {md(home['arr'])}"), crew))
     page = page.replace("{{FLIGHTS}}", '<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px">\n' + "".join(cards) + "</div>")
     page = page.replace("{{NOTES}}", "".join(notes))
+    page = page.replace("{{BANNER}}", banner_html())
+    page = page.replace("{{FOOTER}}", esc(X.get("complete", {}).get("footer", "")) or "楽しんでね！ Have a great trip")
     now = datetime.now(TZ)
     page = page.replace("{{UPDATED}}", f"All times local · Synced with TripIt {md(now)}, {hm(now)} Japan time")
     return page
