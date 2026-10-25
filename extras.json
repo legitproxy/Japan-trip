@@ -349,10 +349,15 @@
     {
       "match": "ginza happo",
       "title": "Ginza Happo, Shinjuku",
-      "sub": "All-you-can-eat seafood buffet to close out the last night in Tokyo",
+      "sub": "All-you-can-eat seafood buffet to close out the last night in Tokyo · hot pots, seafood, meats to grill, a whole wall of sake & a dessert freezer",
       "badge": "ATE IT!",
       "photos": [
-        "assets/photos/2026-10-23-ginza-happo-sign.jpg"
+        "assets/photos/2026-10-23-ginza-happo-sign.jpg",
+        "assets/photos/2026-10-23-happo-hotpots.mp4",
+        "assets/photos/2026-10-23-happo-seafood.mp4",
+        "assets/photos/2026-10-23-happo-meats.mp4",
+        "assets/photos/2026-10-23-happo-sake.mp4",
+        "assets/photos/2026-10-23-happo-dessert.mp4"
       ]
     },
     {
