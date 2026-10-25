@@ -408,7 +408,8 @@ def build(feed_text):
     for m in X.get("manual", []):
         d = date.fromisoformat(m["date"])
         add(d, {"sort": m.get("sort", "00:00"), "time": m.get("time", ""), "title": m["title"], "sub": m.get("sub", ""),
-                "badge": m.get("badge", ""), "under": m.get("under", "").lower(), "photos": m.get("photos", [])})
+                "badge": m.get("badge", ""), "under": m.get("under", "").lower(), "photos": m.get("photos", []),
+                "addr": m.get("addr", "") if X.get("show_addresses") else ""})
 
     # Days, grouped into legs
     days_by_leg = {lg["id"]: [] for lg in legs}
