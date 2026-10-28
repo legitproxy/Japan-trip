@@ -320,7 +320,8 @@
       "title": "teamLab Planets, Toyosu",
       "sub": "Barefoot in water: wear pants that roll up",
       "photos": [
-        "assets/photos/2026-10-21-teamlab-crew.jpg"
+        "assets/photos/2026-10-21-teamlab-crew.jpg",
+        "assets/photos/2026-10-21-toyosu-bay-view.jpg"
       ],
       "badge": "DID IT!"
     },
@@ -329,7 +330,13 @@
       "if_location": "Kyoto",
       "title": "teamLab Biovortex Kyoto",
       "sub": "Surreal, interactive digital art. A first-class experience!",
-      "badge": "SAW IT!"
+      "badge": "SAW IT!",
+      "photos": [
+        "assets/photos/2026-10-17-teamlab-biovortex.jpg",
+        "assets/photos/2026-10-17-teamlab-biovortex-lanterns.jpg",
+        "assets/photos/2026-10-17-teamlab-biovortex-selfie.jpg",
+        "assets/photos/2026-10-17-teamlab-biovortex-bubbles.jpg"
+      ]
     },
     {
       "match": "teamlab biovortex",
@@ -347,12 +354,19 @@
       "sub": "Charcoal-grilled hamburg steak lunch · lined up early for the 11:15 slot. WOW!",
       "time": "11:15 AM",
       "sort": "11:15",
-      "badge": "ATE IT!"
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-18-hikiniku-grill.jpg"
+      ]
     },
     {
       "match": "tsukitouro",
       "title": "Arashiyama Tsukitouro",
-      "sub": "Bamboo grove light-up until {end}"
+      "sub": "Bamboo grove light-up until {end}",
+      "photos": [
+        "assets/photos/2026-10-18-arashiyama-light-up-poster.jpg",
+        "assets/photos/2026-10-18-arashiyama-night-torii.jpg"
+      ]
     },
     {
       "match": "zen night",
@@ -433,7 +447,8 @@
         "assets/photos/2026-10-13-iced-coffee.jpg",
         "assets/photos/2026-10-13-sakae-dori.jpg",
         "assets/photos/2026-10-13-tsukiji-market.jpg",
-        "assets/photos/2026-10-13-seafood-market.jpg"
+        "assets/photos/2026-10-13-seafood-market.jpg",
+        "assets/photos/2026-10-13-tsukiji-selfie.jpg"
       ]
     },
     {
@@ -609,7 +624,13 @@
       "sort": "12:30",
       "title": "Uji",
       "sub": "Japan's matcha capital, between Osaka and Kyoto",
-      "badge": "DID IT!"
+      "badge": "DID IT!",
+      "photos": [
+        "assets/photos/2026-10-17-uji-station.jpg",
+        "assets/photos/2026-10-17-uji-street.jpg",
+        "assets/photos/2026-10-17-uji-tea-house.jpg",
+        "assets/photos/2026-10-17-uji-old-street.jpg"
+      ]
     },
     {
       "date": "2026-10-17",
@@ -626,7 +647,10 @@
       "under": "uji",
       "sub": "Inside Osakaya Market (大阪屋マーケット), Uji",
       "badge": "ATE IT!",
-      "addr": "Osakaya Market, Myoraku-41 Uji, Kyoto"
+      "addr": "Osakaya Market, Myoraku-41 Uji, Kyoto",
+      "photos": [
+        "assets/photos/2026-10-17-uji-wagyu-block.jpg"
+      ]
     },
     {
       "date": "2026-10-17",
@@ -635,7 +659,10 @@
       "title": "Ramen at ICHIRAN Kyoto Karasuma",
       "sub": "一蘭 京都烏丸店 · Rated 9/10, oishii! Next time: spice level 6+",
       "badge": "ATE IT!",
-      "addr": "Muse 389 Kyoto 2F, 102-3 Tachiuri Nakanochō, Shimogyo Ward, Kyoto"
+      "addr": "Muse 389 Kyoto 2F, 102-3 Tachiuri Nakanochō, Shimogyo Ward, Kyoto",
+      "photos": [
+        "assets/photos/2026-10-17-ichiran-ramen.jpg"
+      ]
     },
     {
       "date": "2026-10-18",
@@ -644,7 +671,18 @@
       "title": "Fushimi Inari Taisha",
       "sub": "Thousands of red torii gates",
       "badge": "DID IT!",
-      "addr": "68 Fukakusa Yabunouchichō, Fushimi Ward, Kyoto"
+      "addr": "68 Fukakusa Yabunouchichō, Fushimi Ward, Kyoto",
+      "photos": [
+        "assets/photos/2026-10-18-fushimi-inari-torii.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-map.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-gate-selfie.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-crew.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-senbon-torii.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-tunnel.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-gates.jpg",
+        "assets/photos/2026-10-18-fushimi-inari-kitsune.jpg",
+        "assets/photos/2026-10-18-fushimi-fox-gacha.jpg"
+      ]
     },
     {
       "date": "2026-10-18",
@@ -658,7 +696,12 @@
     {
       "date": "2026-10-20",
       "time": "All day",
-      "title": "Shopping spree in Tokyo"
+      "title": "Shopping spree in Tokyo",
+      "photos": [
+        "assets/photos/2026-10-20-tokyo-gallery-space.jpg",
+        "assets/photos/2026-10-20-edo-manhole-cover.jpg",
+        "assets/photos/2026-10-20-beer-hall-lion-display.jpg"
+      ]
     },
     {
       "date": "2026-10-20",
@@ -698,7 +741,10 @@
       "sort": "14:36",
       "title": "Shinkansen, Kyoto → Tokyo",
       "sub": "Nozomi 416 · arrived Tokyo 4:51 PM, Daichi drove us to Yotsuya",
-      "badge": "RODE IT!"
+      "badge": "RODE IT!",
+      "photos": [
+        "assets/photos/2026-10-19-kyoto-station-shinkansen-board.jpg"
+      ]
     },
     {
       "date": "2026-10-18",
@@ -727,7 +773,10 @@
       "badge": "DID IT!",
       "photos": [
         "assets/photos/2026-10-19-nijo-crew.jpg",
-        "assets/photos/2026-10-19-nijo-gate.jpg"
+        "assets/photos/2026-10-19-nijo-gate.jpg",
+        "assets/photos/2026-10-19-kyoto-morning-street.jpg",
+        "assets/photos/2026-10-19-nijo-seiryuen-garden.jpg",
+        "assets/photos/2026-10-19-nijo-garden-pond.jpg"
       ],
       "addr": "541 Nijōjōchō, Nakagyo Ward, Kyoto"
     },
@@ -739,7 +788,8 @@
       "sub": "Pork katsu, roast beef & keema curry with an egg yolk over turmeric rice",
       "badge": "ATE IT!",
       "photos": [
-        "assets/photos/2026-10-19-curry-family.jpg"
+        "assets/photos/2026-10-19-curry-family.jpg",
+        "assets/photos/2026-10-19-kyoto-bus-stop-street.jpg"
       ],
       "addr": "Yokoyama Bldg 1F, 229 Itoyachō, Shimogyo Ward, Kyoto"
     },
@@ -758,7 +808,11 @@
       "sort": "19:30",
       "title": "Pizza night at the Yotsuya Airbnb",
       "sub": "A pile of Pizza-La pizzas + 7-Eleven snacks for a takeout party, then an Avatar movie night. A success!",
-      "badge": "ATE IT!"
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-19-iyoshi-cola-vending.jpg",
+        "assets/photos/2026-10-19-pizza-la-night.jpg"
+      ]
     },
     {
       "date": "2026-10-20",
@@ -989,7 +1043,8 @@
       "badge": "ATE IT!",
       "addr": "Shinjuku 3-21-4, 6F, Shinjuku City, Tokyo",
       "photos": [
-        "assets/photos/2026-10-22-23banchi-crew.jpg"
+        "assets/photos/2026-10-22-23banchi-crew.jpg",
+        "assets/photos/2026-10-22-packed-train.jpg"
       ]
     },
     {
@@ -1010,6 +1065,31 @@
       "date": "2026-10-16",
       "photos": [
         "assets/photos/2026-10-16-osaka-morning-street.jpg"
+      ]
+    },
+    {
+      "time": "Afternoon",
+      "sort": "16:00",
+      "title": "Yasaka Pagoda, Higashiyama",
+      "badge": "SAW IT!",
+      "date": "2026-10-18",
+      "photos": [
+        "assets/photos/2026-10-18-higashiyama-sign.jpg",
+        "assets/photos/2026-10-18-kodaiji-path.jpg",
+        "assets/photos/2026-10-18-yasaka-pagoda-crew.jpg",
+        "assets/photos/2026-10-18-yasaka-pagoda.jpg",
+        "assets/photos/2026-10-18-yasaka-pagoda-selfie.jpg"
+      ]
+    },
+    {
+      "time": "Midday",
+      "sort": "11:30",
+      "title": "Gōtokuji Temple",
+      "badge": "SAW IT!",
+      "date": "2026-10-22",
+      "photos": [
+        "assets/photos/2026-10-22-gotokuji-lucky-cats.jpg",
+        "assets/photos/2026-10-22-gotokuji-cat-sign.jpg"
       ]
     }
   ],
