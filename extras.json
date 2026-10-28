@@ -211,11 +211,30 @@
     {
       "match": "check-in: ubuya",
       "title": "Check in, Kozantei Ubuya",
-      "sub": "Kaiseki dinner, onsen, Fuji views"
+      "sub": "Kaiseki dinner, onsen, Fuji views",
+      "photos": [
+        "assets/photos/2026-10-14-ubuya-fuji-view.jpg",
+        "assets/photos/2026-10-14-ubuya-room-onsen.jpg",
+        "assets/photos/2026-10-14-ubuya-yukata.jpg",
+        "assets/photos/2026-10-14-ubuya-yukata-selfie.jpg",
+        "assets/photos/2026-10-14-ubuya-dining-room.jpg",
+        "assets/photos/2026-10-14-ubuya-celebrate-wall.jpg",
+        "assets/photos/2026-10-14-ubuya-ping-pong.jpg",
+        "assets/photos/2026-10-14-ubuya-lounge.jpg",
+        "assets/photos/2026-10-14-ubuya-gallery.jpg",
+        "assets/photos/2026-10-14-ubuya-fun-hat.jpg"
+      ]
     },
     {
       "match": "check-out: ubuya",
-      "title": "Check out, Kozantei Ubuya"
+      "title": "Check out, Kozantei Ubuya",
+      "photos": [
+        "assets/photos/2026-10-15-kawaguchiko-fountain.jpg",
+        "assets/photos/2026-10-15-kawaguchiko-lane.jpg",
+        "assets/photos/2026-10-15-kawaguchiko-shrine.jpg",
+        "assets/photos/2026-10-15-kawaguchiko-tunnel.jpg",
+        "assets/photos/2026-10-15-private-car.jpg"
+      ]
     },
     {
       "match": "check-in: osaka",
@@ -239,7 +258,11 @@
     {
       "match": "maguro mart",
       "title": "Maguro Mart",
-      "sub": "All-bluefin tuna izakaya in Nakano"
+      "sub": "All-bluefin tuna izakaya in Nakano",
+      "photos": [
+        "assets/photos/2026-10-11-nakano-alley.jpg",
+        "assets/photos/2026-10-11-maguro-mart-tuna.jpg"
+      ]
     },
     {
       "match": "happy pancake",
@@ -275,14 +298,22 @@
     {
       "match": "shinkansen",
       "title": "Bullet train, Mishima → Shin-Osaka",
-      "sub": "First Shinkansen ride for most of the crew · arrives {end}"
+      "sub": "First Shinkansen ride for most of the crew · arrives {end}",
+      "photos": [
+        "assets/photos/2026-10-15-shinkansen-fuji.jpg"
+      ]
     },
     {
       "match": "universal studios",
       "title": "Universal Studios Japan",
       "sub": "Afternoon into Halloween night",
       "time": "Afternoon",
-      "sort": "14:00"
+      "sort": "14:00",
+      "photos": [
+        "assets/photos/2026-10-16-usj-vending-machine.jpg",
+        "assets/photos/2026-10-16-usj-hogsmeade-drink.jpg",
+        "assets/photos/2026-10-16-usj-nintendo-world-selfie.jpg"
+      ]
     },
     {
       "match": "teamlab planets",
@@ -385,12 +416,25 @@
     {
       "date": "2026-10-12",
       "time": "All day",
-      "title": "Sports Day holiday"
+      "title": "Sports Day holiday",
+      "photos": [
+        "assets/photos/2026-10-12-coin-case.jpg",
+        "assets/photos/2026-10-12-crew-selfie.jpg",
+        "assets/photos/2026-10-12-fire-truck.jpg",
+        "assets/photos/2026-10-12-squat-toilet.jpg"
+      ]
     },
     {
       "date": "2026-10-13",
       "time": "All day",
-      "title": "Shopping spree in Tokyo"
+      "title": "Shopping spree in Tokyo",
+      "photos": [
+        "assets/photos/2026-10-13-market-stools.jpg",
+        "assets/photos/2026-10-13-iced-coffee.jpg",
+        "assets/photos/2026-10-13-sakae-dori.jpg",
+        "assets/photos/2026-10-13-tsukiji-market.jpg",
+        "assets/photos/2026-10-13-seafood-market.jpg"
+      ]
     },
     {
       "date": "2026-10-14",
@@ -405,7 +449,14 @@
       "sort": "13:30",
       "title": "Oishi Park",
       "sub": "Kochia turning crimson by the lake",
-      "addr": "2585-85 Ōishi, Fujikawaguchiko, Yamanashi"
+      "addr": "2585-85 Ōishi, Fujikawaguchiko, Yamanashi",
+      "photos": [
+        "assets/photos/2026-10-14-fujisan-noren.jpg",
+        "assets/photos/2026-10-14-fuji-road.jpg",
+        "assets/photos/2026-10-14-kawaguchiko-lake.jpg",
+        "assets/photos/2026-10-14-oishi-park-fuji.jpg",
+        "assets/photos/2026-10-14-oishi-park-kochia.jpg"
+      ]
     },
     {
       "date": "2026-10-14",
@@ -429,7 +480,12 @@
       "date": "2026-10-15",
       "time": "Night",
       "sort": "19:00",
-      "title": "Night out in Namba"
+      "title": "Night out in Namba",
+      "photos": [
+        "assets/photos/2026-10-15-namba-arcade.jpg",
+        "assets/photos/2026-10-15-don-quijote-namba.jpg",
+        "assets/photos/2026-10-15-omikuji-gacha.jpg"
+      ]
     },
     {
       "date": "2026-10-15",
@@ -443,7 +499,12 @@
       "title": "Dotonbori neon walk",
       "sub": "The Glico running man and all the lights along the canal",
       "badge": "SAW IT!",
-      "under": "night out in namba"
+      "under": "night out in namba",
+      "photos": [
+        "assets/photos/2026-10-15-dotonbori-canal.jpg",
+        "assets/photos/2026-10-15-dotonbori-gate.jpg",
+        "assets/photos/2026-10-15-glico-sign.jpg"
+      ]
     },
     {
       "date": "2026-10-16",
@@ -461,7 +522,10 @@
       "title": "Osaka Castle",
       "sub": "Walked and rode the trolley around the castle grounds",
       "badge": "DID IT!",
-      "addr": "1-1 Ōsakajō, Chuo Ward, Osaka"
+      "addr": "1-1 Ōsakajō, Chuo Ward, Osaka",
+      "photos": [
+        "assets/photos/2026-10-16-osaka-loop-train.jpg"
+      ]
     },
     {
       "date": "2026-10-16",
@@ -488,7 +552,11 @@
       "title": "Mario Kart: Koopa's Challenge",
       "sub": "Super Nintendo World, with the Express Pass",
       "badge": "DID IT!",
-      "under": "universal"
+      "under": "universal",
+      "photos": [
+        "assets/photos/2026-10-16-mario-kart-trophy.jpg",
+        "assets/photos/2026-10-16-mario-kart-headsets.jpg"
+      ]
     },
     {
       "date": "2026-10-16",
@@ -513,7 +581,10 @@
       "sort": "19:30",
       "title": "Harry Potter and the Forbidden Journey",
       "badge": "DID IT!",
-      "under": "universal"
+      "under": "universal",
+      "photos": [
+        "assets/photos/2026-10-16-hogsmeade-night.jpg"
+      ]
     },
     {
       "date": "2026-10-16",
@@ -919,6 +990,26 @@
       "addr": "Shinjuku 3-21-4, 6F, Shinjuku City, Tokyo",
       "photos": [
         "assets/photos/2026-10-22-23banchi-crew.jpg"
+      ]
+    },
+    {
+      "time": "Morning",
+      "sort": "10:15",
+      "title": "Hachikō Statue, Shibuya",
+      "badge": "SAW IT!",
+      "date": "2026-10-12",
+      "photos": [
+        "assets/photos/2026-10-12-hachiko.jpg"
+      ]
+    },
+    {
+      "time": "Morning",
+      "sort": "10:00",
+      "title": "Morning Walk in Osaka",
+      "badge": "DID IT!",
+      "date": "2026-10-16",
+      "photos": [
+        "assets/photos/2026-10-16-osaka-morning-street.jpg"
       ]
     }
   ],
