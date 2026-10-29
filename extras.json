@@ -396,7 +396,13 @@
         "assets/photos/2026-10-21-kappo-wine-gevrey.jpg",
         "assets/photos/2026-10-21-kappo-wine-vendemmie.jpg",
         "assets/photos/2026-10-21-kappo-wine-noble.jpg",
-        "assets/photos/2026-10-21-kappo-chefs.jpg"
+        "assets/photos/2026-10-21-kappo-chefs.jpg",
+        "assets/photos/2026-10-21-kappo-chef-slicing.jpg",
+        "assets/photos/2026-10-21-kappo-stone-grill.jpg",
+        "assets/photos/2026-10-21-kappo-soup.jpg",
+        "assets/photos/2026-10-21-kappo-tataki.jpg",
+        "assets/photos/2026-10-21-kappo-entrance.jpg",
+        "assets/photos/2026-10-21-kappo-wagyu-box-2.jpg"
       ]
     },
     {
@@ -1090,6 +1096,36 @@
       "photos": [
         "assets/photos/2026-10-22-gotokuji-lucky-cats.jpg",
         "assets/photos/2026-10-22-gotokuji-cat-sign.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "time": "Night",
+      "sort": "19:09",
+      "title": "Cocktails",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-22-cocktail.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "time": "Night",
+      "sort": "21:16",
+      "title": "Godzilla Head, Kabukichō",
+      "badge": "SAW IT!",
+      "photos": [
+        "assets/photos/2026-10-22-godzilla-kabukicho.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "time": "Night",
+      "sort": "19:47",
+      "title": "Habu Snake Sake",
+      "badge": "SAW IT!",
+      "photos": [
+        "assets/photos/2026-10-19-habu-sake.jpg"
       ]
     }
   ],
