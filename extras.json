@@ -261,7 +261,9 @@
       "sub": "All-bluefin tuna izakaya in Nakano",
       "photos": [
         "assets/photos/2026-10-11-nakano-alley.jpg",
-        "assets/photos/2026-10-11-maguro-mart-tuna.jpg"
+        "assets/photos/2026-10-11-maguro-mart-tuna.jpg",
+        "assets/photos/2026-10-11-maguro-mart-nigiri.jpg",
+        "assets/photos/2026-10-11-maguro-mart-tuna-pose.jpg"
       ]
     },
     {
@@ -300,7 +302,9 @@
       "title": "Bullet train, Mishima → Shin-Osaka",
       "sub": "First Shinkansen ride for most of the crew · arrives {end}",
       "photos": [
-        "assets/photos/2026-10-15-shinkansen-fuji.jpg"
+        "assets/photos/2026-10-15-shinkansen-fuji.jpg",
+        "assets/photos/2026-10-15-mishima-fuji-view.jpg",
+        "assets/photos/2026-10-15-shinkansen-fuji-2.jpg"
       ]
     },
     {
@@ -446,7 +450,8 @@
         "assets/photos/2026-10-12-coin-case.jpg",
         "assets/photos/2026-10-12-crew-selfie.jpg",
         "assets/photos/2026-10-12-fire-truck.jpg",
-        "assets/photos/2026-10-12-squat-toilet.jpg"
+        "assets/photos/2026-10-12-squat-toilet.jpg",
+        "assets/photos/2026-10-12-morning-street.jpg"
       ]
     },
     {
@@ -459,7 +464,9 @@
         "assets/photos/2026-10-13-sakae-dori.jpg",
         "assets/photos/2026-10-13-tsukiji-market.jpg",
         "assets/photos/2026-10-13-seafood-market.jpg",
-        "assets/photos/2026-10-13-tsukiji-selfie.jpg"
+        "assets/photos/2026-10-13-tsukiji-selfie.jpg",
+        "assets/photos/2026-10-13-giant-senbei.jpg",
+        "assets/photos/2026-10-13-evening-alley.jpg"
       ]
     },
     {
@@ -481,7 +488,8 @@
         "assets/photos/2026-10-14-fuji-road.jpg",
         "assets/photos/2026-10-14-kawaguchiko-lake.jpg",
         "assets/photos/2026-10-14-oishi-park-fuji.jpg",
-        "assets/photos/2026-10-14-oishi-park-kochia.jpg"
+        "assets/photos/2026-10-14-oishi-park-kochia.jpg",
+        "assets/photos/2026-10-14-oishi-park-fuji-2.jpg"
       ]
     },
     {
@@ -500,7 +508,10 @@
       "title": "Giant Jorō spiders everywhere!",
       "sub": "Yellow-and-black striped orb weavers (女郎蜘蛛) all over the Fuji area",
       "badge": "SPOTTED!",
-      "under": "oishi park"
+      "under": "oishi park",
+      "photos": [
+        "assets/photos/2026-10-14-joro-spider-web.jpg"
+      ]
     },
     {
       "date": "2026-10-15",
@@ -535,7 +546,8 @@
         "assets/photos/2026-10-15-dotonbori-gate.jpg",
         "assets/photos/2026-10-15-glico-sign.jpg",
         "assets/photos/2026-10-15-kushikatsu-sign.jpg",
-        "assets/photos/2026-10-15-namba-night-crew.jpg"
+        "assets/photos/2026-10-15-namba-night-crew.jpg",
+        "assets/photos/2026-10-15-namba-night-crew-2.jpg"
       ]
     },
     {
@@ -587,7 +599,8 @@
       "under": "universal",
       "photos": [
         "assets/photos/2026-10-16-mario-kart-trophy.jpg",
-        "assets/photos/2026-10-16-mario-kart-headsets.jpg"
+        "assets/photos/2026-10-16-mario-kart-headsets.jpg",
+        "assets/photos/2026-10-16-mario-kart-queue.mp4"
       ]
     },
     {
@@ -1170,6 +1183,36 @@
       "badge": "SAW IT!",
       "photos": [
         "assets/photos/2026-10-16-super-nintendo-world-night.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "time": "Night",
+      "sort": "20:54",
+      "title": "Martial Plarts Gym Sign",
+      "badge": "SAW IT!",
+      "photos": [
+        "assets/photos/2026-10-11-martial-plarts-gym.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "time": "Night",
+      "sort": "18:49",
+      "title": "Tonkotsu Ramen Dinner",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-13-tonkotsu-ramen.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "time": "Morning",
+      "sort": "09:47",
+      "title": "Jorō Spider Sighting",
+      "badge": "SAW IT!",
+      "photos": [
+        "assets/photos/2026-10-15-joro-spider.jpg"
       ]
     }
   ],
