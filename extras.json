@@ -312,7 +312,8 @@
       "photos": [
         "assets/photos/2026-10-16-usj-vending-machine.jpg",
         "assets/photos/2026-10-16-usj-hogsmeade-drink.jpg",
-        "assets/photos/2026-10-16-usj-nintendo-world-selfie.jpg"
+        "assets/photos/2026-10-16-usj-nintendo-world-selfie.jpg",
+        "assets/photos/2026-10-16-luigi-shirt.jpg"
       ]
     },
     {
@@ -335,7 +336,10 @@
         "assets/photos/2026-10-17-teamlab-biovortex.jpg",
         "assets/photos/2026-10-17-teamlab-biovortex-lanterns.jpg",
         "assets/photos/2026-10-17-teamlab-biovortex-selfie.jpg",
-        "assets/photos/2026-10-17-teamlab-biovortex-bubbles.jpg"
+        "assets/photos/2026-10-17-teamlab-biovortex-bubbles.jpg",
+        "assets/photos/2026-10-17-teamlab-waterfall.jpg",
+        "assets/photos/2026-10-17-teamlab-lanterns.jpg",
+        "assets/photos/2026-10-17-teamlab-floor.jpg"
       ]
     },
     {
@@ -365,7 +369,8 @@
       "sub": "Bamboo grove light-up until {end}",
       "photos": [
         "assets/photos/2026-10-18-arashiyama-light-up-poster.jpg",
-        "assets/photos/2026-10-18-arashiyama-night-torii.jpg"
+        "assets/photos/2026-10-18-arashiyama-night-torii.jpg",
+        "assets/photos/2026-10-18-bamboo-night.jpg"
       ]
     },
     {
@@ -505,14 +510,18 @@
       "photos": [
         "assets/photos/2026-10-15-namba-arcade.jpg",
         "assets/photos/2026-10-15-don-quijote-namba.jpg",
-        "assets/photos/2026-10-15-omikuji-gacha.jpg"
+        "assets/photos/2026-10-15-omikuji-gacha.jpg",
+        "assets/photos/2026-10-15-namba-arcade-2.jpg"
       ]
     },
     {
       "date": "2026-10-15",
       "sort": "19:01",
       "title": "Dinner",
-      "under": "night out in namba"
+      "under": "night out in namba",
+      "photos": [
+        "assets/photos/2026-10-15-yakiniku-dinner-crew.jpg"
+      ]
     },
     {
       "date": "2026-10-15",
@@ -524,7 +533,9 @@
       "photos": [
         "assets/photos/2026-10-15-dotonbori-canal.jpg",
         "assets/photos/2026-10-15-dotonbori-gate.jpg",
-        "assets/photos/2026-10-15-glico-sign.jpg"
+        "assets/photos/2026-10-15-glico-sign.jpg",
+        "assets/photos/2026-10-15-kushikatsu-sign.jpg",
+        "assets/photos/2026-10-15-namba-night-crew.jpg"
       ]
     },
     {
@@ -594,7 +605,10 @@
       "sort": "18:50",
       "title": "Dinner at Kinopio's Cafe",
       "sub": "The Toad-themed restaurant inside Super Nintendo World",
-      "under": "universal"
+      "under": "universal",
+      "photos": [
+        "assets/photos/2026-10-16-kinopio-cafe-crew.jpg"
+      ]
     },
     {
       "date": "2026-10-16",
@@ -604,7 +618,8 @@
       "badge": "DID IT!",
       "under": "universal",
       "photos": [
-        "assets/photos/2026-10-16-hogsmeade-night.jpg"
+        "assets/photos/2026-10-16-hogsmeade-night.jpg",
+        "assets/photos/2026-10-16-hogsmeade-night-2.jpg"
       ]
     },
     {
@@ -622,7 +637,10 @@
       "sort": "21:00",
       "title": "Strolled Hollywood and the Snoopy area",
       "sub": "Last stop before heading home",
-      "under": "universal"
+      "under": "universal",
+      "photos": [
+        "assets/photos/2026-10-16-usj-hollywood-night.jpg"
+      ]
     },
     {
       "date": "2026-10-17",
@@ -697,7 +715,10 @@
       "sub": "Yuzen Chopstick Store (手作り箸工房 遊膳), Fushimi",
       "badge": "GOT IT!",
       "under": "fushimi inari",
-      "addr": "63-4 Fukakusa Inari Nakanochō, Fushimi Ward, Kyoto"
+      "addr": "63-4 Fukakusa Inari Nakanochō, Fushimi Ward, Kyoto",
+      "photos": [
+        "assets/photos/2026-10-18-custom-chopsticks.jpg"
+      ]
     },
     {
       "date": "2026-10-20",
@@ -759,7 +780,10 @@
       "title": "Nishiki Market",
       "sub": "Kyoto's covered food street",
       "badge": "DID IT!",
-      "addr": "Nishikikōji-dōri, Nakagyo Ward, Kyoto"
+      "addr": "Nishikikōji-dōri, Nakagyo Ward, Kyoto",
+      "photos": [
+        "assets/photos/2026-10-18-nishiki-market.jpg"
+      ]
     },
     {
       "date": "2026-10-18",
@@ -1126,6 +1150,26 @@
       "badge": "SAW IT!",
       "photos": [
         "assets/photos/2026-10-19-habu-sake.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "time": "Midday",
+      "sort": "11:36",
+      "title": "Rice & Egg Set Lunch",
+      "badge": "ATE IT!",
+      "photos": [
+        "assets/photos/2026-10-18-rice-egg-lunch.jpg"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "time": "Night",
+      "sort": "20:33",
+      "title": "Super Nintendo World at Night",
+      "badge": "SAW IT!",
+      "photos": [
+        "assets/photos/2026-10-16-super-nintendo-world-night.jpg"
       ]
     }
   ],
